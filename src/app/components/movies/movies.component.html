@@ -1,0 +1,26 @@
+
+<section>
+  <div class="layer-2">
+  <div class="container">
+    <div class="row py-5">
+          <div class="col-md-3" *ngFor="let movie of moviesList">
+             <div class="movie-content py-5 text-center position-relative">
+
+              <a [routerLink]='["/moviedetails", movie.id]'>
+
+               <img [src]="imgPrefix+movie.poster_path" class="w-100 rounded-pill py-3" alt="">
+               <div class="d-flex justify-content-start align-items-start layer position-absolute py-3">
+                   <h4 class="bg-info rounded"> {{ movie.vote_average }} </h4>
+               </div>
+               <h4 >{{movie.title}}</h4>
+               <h3>Vote : {{movie.vote_count}}</h3>
+               <h5>popularity : {{movie.popularity}}</h5>
+
+               </a>
+             </div>
+          </div>
+    </div>
+  </div>
+  </div>
+</section>
+

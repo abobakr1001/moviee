@@ -1,0 +1,16 @@
+<div class=" container">
+  <div class=" row py-5 mt-5">
+    <div class="col-md-2" *ngFor="let tv of trendingtv">
+      <div class="movie my-2 position-relative content">
+        <img [src]="imgPrefix+tv.poster_path" class="w-100" alt="">
+        <div class="d-flex justify-content-center align-items-center position-absolute layer">
+          <h3> {{tv.vote_average}} </h3>
+          <div class="vote">
+            {{tv.vote_average}}
+          </div>
+        </div>
+      </div>
+ </div>
+  </div>
+</div>
+

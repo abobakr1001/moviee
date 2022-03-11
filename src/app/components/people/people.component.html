@@ -1,0 +1,16 @@
+
+<div class="container">
+
+<div class="row py-5">
+
+  <div class="col-md-3" *ngFor="let people of trendingPeople">
+       <div class="movie my-2 position-relative content">
+         <img [src]="imgPrefix+people.profile_path" class="w-100" alt="">
+         <div class="d-flex justify-content-center align-items-center position-absolute layer">
+           <h3> {{people.name }} </h3>
+
+         </div>
+       </div>
+  </div>
+</div>
+</div>
